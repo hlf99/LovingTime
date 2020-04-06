@@ -1,0 +1,15 @@
+.head {
+  height: 79rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+}
+.head view {
+  padding: 16rpx 40rpx;
+}
+.active {
+  border-bottom: 4rpx solid #ff7050;
+  color: #ff7050;
+}

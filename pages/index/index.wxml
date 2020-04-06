@@ -1,0 +1,20 @@
+<view class="wrap">
+  <!-- 头部导航栏 -->
+  <view class="head">
+    <view 
+    wx:for="{{navItem}}" 
+    wx:key="id" 
+    class="{{item.isActive ? 'active' : ''}}"
+    bindtap="handleItemNavChange"
+    data-index="{{index}}">
+    {{item.name}}</view>
+  </view>
+
+  <!-- 具体信息部分 -->
+  <view class="news_wrap">
+    <view wx:if="{{navItem[0].isActive}}" class="news_item">1</view>
+    <view wx:elif="{{navItem[1].isActive}}" class="news_item">2</view>
+    <view wx:elif="{{navItem[1].isActive}}" class="news_item">3</view>
+    <view wx:else class="news_item">4</view>
+  </view>
+</view>

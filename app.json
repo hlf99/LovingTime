@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/anniversary/anniversary",
+    "pages/tree/tree",
+    "pages/ours/ours"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff00fb",
+    "navigationBarTitleText": "壹校恋爱时光-广场",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#ff45ad",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "广场",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-active.png"
+      },
+      {
+        "pagePath": "pages/anniversary/anniversary",
+        "text": "纪念日",
+        "iconPath": "images/anniversary.png",
+        "selectedIconPath": "images/anniversary-active.png"
+      },
+      {
+        "pagePath": "pages/tree/tree",
+        "text": "爱情树",
+        "iconPath": "images/tree.png",
+        "selectedIconPath": "images/tree-active.png"
+      },
+      {
+        "pagePath": "pages/ours/ours",
+        "text": "我们的",
+        "iconPath": "images/ours.png",
+        "selectedIconPath": "images/ours-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
