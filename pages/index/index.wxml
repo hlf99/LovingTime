@@ -1,20 +1,76 @@
-<view class="wrap">
+<view class="nav_wrap">
   <!-- 头部导航栏 -->
   <view class="head">
-    <view 
-    wx:for="{{navItem}}" 
-    wx:key="id" 
-    class="{{item.isActive ? 'active' : ''}}"
-    bindtap="handleItemNavChange"
-    data-index="{{index}}">
-    {{item.name}}</view>
+    <view wx:for="{{navItem}}" wx:key="id" class="nav_item {{item.isActive ? 'active' : ''}}" bindtap="handleItemNavChange"
+      data-index="{{index}}">
+      {{item.name}}</view>
   </view>
+</view>
 
-  <!-- 具体信息部分 -->
-  <view class="news_wrap">
-    <view wx:if="{{navItem[0].isActive}}" class="news_item">1</view>
-    <view wx:elif="{{navItem[1].isActive}}" class="news_item">2</view>
-    <view wx:elif="{{navItem[1].isActive}}" class="news_item">3</view>
-    <view wx:else class="news_item">4</view>
+<!-- 具体内容部分 -->
+<view class="news_content_wrap">
+  <!-- 热门部分 -->
+  <view wx:if="{{navItem[0].isActive}}" class="news_item">
+    <!-- 轮播图部分 -->
+    <swiper autoplay circular indicator-dots indicator-color="#fff">
+      <swiper-item wx:for="{{swiperItemList}}" wx:key="id">
+        <navigator>
+          <image mode="widthFix" src="{{item.src}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+    <!-- 纪念日提醒 -->
+    <view class="dateRemind_wrap">
+      <view class="date_title">纪念日（在一起99天）</view>
+      <view class="date_content">
+        <view class="date_content_item">
+          <view class="iconfont icon-shizhong"></view>
+          20/03/03 周二 00:00
+        </view>
+        <view class="date_content_item">
+          <view class="iconfont icon-lingdang"></view>
+          距离你们最近的纪念日还有22天
+        </view>
+      </view>
+    </view>
+    <!-- 消息浏览部分 -->
+    <view class="message_wrap">
+      <view class="message_item">
+        <view class="msg_title">
+          <view class="user_img">
+            <image></image>
+          </view>
+          <view class="user-info">
+            <view class="user_name"></view>
+            <view class="date"></view>
+            <view class="address"></view>
+          </view>
+          <view class="iconfont"></view>
+        </view>
+        <view class="msg_content">
+          <view class="msg_text"></view>
+          <view class="msg_img"></view>
+        </view>
+        <view class="msg_tools">
+          <view class="view_count"></view>
+          <view class="msg_handleIcon">
+            <text class="iconfont"></text>
+            <text class="iconfont"></text>
+            <text class="iconfont"></text>
+          </view>
+        </view>
+        <view class="msg_commemts">
+          <view class="comment_count"></view>
+          <view class="comment_content"></view>
+          <view class="comment_input"></view>
+        </view>
+      </view>
+    </view>
   </view>
+  <!-- 资讯部分 -->
+  <view wx:elif="{{navItem[1].isActive}}" class="news_item">2</view>
+  <!-- 音乐部分 -->
+  <view wx:elif="{{navItem[2].isActive}}" class="news_item">3</view>
+  <!-- 排行榜部分 -->
+  <view wx:else class="news_item">4</view>
 </view>

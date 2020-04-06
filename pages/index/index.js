@@ -21,9 +21,31 @@ Page({
         id: 3,
         isActive: false
       }, {
-        name: "热门",
+        name: "排行榜",
         id: 4,
         isActive: false
+      }
+    ],
+    swiperItemList: [
+      {
+        src: 'https://ae01.alicdn.com/kf/H82f112b92b19451db8f72c680c3c7e8cx.jpg',
+        id: 0
+      },
+      {
+        src: 'https://ae01.alicdn.com/kf/Hf1162026e93a4dbe935e0df603be23e53.jpg',
+        id: 1
+      },
+      {
+        src: 'https://ae01.alicdn.com/kf/H9b32c07cfbfb420592eada516e8003feX.jpg',
+        id: 2
+      },
+      {
+        src: 'https://ae01.alicdn.com/kf/Hfce0ea426817453e8c3c77c290c478ed8.jpg',
+        id: 3
+      },
+      {
+        src: 'https://ae01.alicdn.com/kf/H8c0fc55a321f45ca85fec7a434162ba8Y.jpg',
+        id: 4
       }
     ]
   },
