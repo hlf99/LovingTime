@@ -70,6 +70,33 @@ Page({
         msg_img: 'https://ae01.alicdn.com/kf/H74898f1ca5a24d568957c5fa1f479c03S.jpg',
         viewCount: 23
       }
+    ],
+    // 资讯列表数据
+    informationList: [
+      {
+        info_id: 10,
+        info_title: '旧电脑平板别丢了！将你的屏幕都利用起来',
+        info_img: 'https://ae01.alicdn.com/kf/H878404cc1e6f4993b245a6ee7dbb36b69.jpg',
+        read_count: 9820
+      },
+      {
+        info_id: 11,
+        info_title: '大学宿舍什么样的人容易招室友毒手？这几种室友叫人有去...',
+        info_img: 'https://ae01.alicdn.com/kf/H251ae2591af74f8da8d560556832d70aC.jpg',
+        read_count: 10000
+      },
+      {
+        info_id: 12,
+        info_title: '城管执法将西瓜砸个稀烂，摊主小伙爆发',
+        info_img: 'https://ae01.alicdn.com/kf/H056db138ebfa4c2d95a205d1ea373da7y.jpg',
+        read_count: 5823
+      },
+      {
+        info_id: 13,
+        info_title: '某男子突然跳到水里自杀，为什么？',
+        info_img: 'https://ae01.alicdn.com/kf/Hb820d02712dd444dad69dc47f203d7ccM.png',
+        read_count: 13000
+      }
     ]
   },
 
@@ -89,6 +116,13 @@ Page({
     wx.navigateTo({
       url: '/pages/publish_msg/publish_msg'
     })
+  },
+
+  // 点击资讯 跳转到资讯详情页面
+  handleToInfoDetail() {
+    wx.navigateTo({
+      url: '/pages/info_detail/info_detail'
+    });
   },
 
   /**

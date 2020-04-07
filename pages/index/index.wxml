@@ -87,7 +87,26 @@
     </view>
   </view>
   <!-- 资讯部分 -->
-  <view wx:elif="{{navItem[1].isActive}}" class="news_item">2</view>
+  <view wx:elif="{{navItem[1].isActive}}" class="news_item">
+    <!-- 搜索框部分 -->
+    <view class="info_search_wrap">
+      <input></input>
+      <view class="iconfont icon-zhuxingtuxuanzhong"></view>
+      <view class="search_btn">搜索</view>
+    </view>
+    <!-- 资讯列表部分 -->
+    <view class="info_list_wrap">
+      <view class="info_item" wx:for="{{informationList}}" wx:key="info_id" bindtap="handleToInfoDetail">
+        <view class="info_img">
+          <image src="{{item.info_img}}"></image>
+        </view>
+        <view class="info_content">
+          <view class="info_title">{{item.info_title}}</view>
+          <view class="info_count">{{item.read_count}}阅读</view>
+        </view>
+      </view>
+    </view>
+  </view>
   <!-- 音乐部分 -->
   <view wx:elif="{{navItem[2].isActive}}" class="news_item">3</view>
   <!-- 排行榜部分 -->

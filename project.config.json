@@ -52,6 +52,14 @@
 					"id": -1,
 					"name": "消息发布页面",
 					"pathName": "pages/publish_msg/publish_msg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "资讯详情页面",
+					"pathName": "pages/info_detail/info_detail",
+					"query": "info_id=10",
 					"scene": null
 				}
 			]

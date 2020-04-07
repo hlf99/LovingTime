@@ -1,0 +1,52 @@
+<view class="info_detail_wrap">
+    <view class="info_title">
+        旧电脑平板别丢了！将你的屏幕都利用起来
+    </view>
+    <view class="info_origin">
+        IT之家 8小时前
+    </view>
+    <view class="info_content">
+        <text>
+            感谢IT之家网友 ARM控股 的投稿
+
+            或许大家看到这个标题会联想到市面上的一些远程控制软件，诸如：TeamViewer、AnyDesk等。这一次笔者想推荐的并不是一款远程桌面软件，而是一款远程显示软件，甚至可以理解成一款简易的KVM系统。
+
+            虽然市面上许多远程控制软件能实现差不多的功能。比如：同步显示主机的画面、远程控制目标主机。但大多存在这样几个问题总是令人不太满意：不能实现扩展桌面功能、远程播放视频不流畅、FPS很低、响应延迟较大。或许spacedesk正好合你的口味。
+
+            究竟有什么黑科技？
+
+            既然提到了spacedesk和远程控制软件有很大的不同，那么究竟哪里不同呢？它到底藏着怎样的黑科技？让我们来聊聊驱动的那些事。
+
+            远程桌面控制软件大多通过DirectX抓取桌面图像然后压缩处理传输给远程电脑显示。如果有在远程时注意观察任务管理器的之家网友，不难发现除了远程控制软件本身占据着CPU外，DWM的CPU占用率也比平常高不少。
+
+            下面两张图为没有开启任何其他应用软件的情况下截取的，第一张为通过TeamViewer被远程控制，第二张为TeamViewer关闭。
+        </text>
+        <image mode="widthFix" src="https://ae01.alicdn.com/kf/Hd73abdcdcbe643eb906c99a8da1d76a8e.jpg"></image>
+        <image mode="widthFix" src="https://ae01.alicdn.com/kf/H74dda9ef22ca4d55bf5c63e48a4bc1c1g.jpg"></image>
+    </view>
+    <view class="info_comments">
+        <view class="comment_title">最新评论</view>
+        <view class="comment_item" wx:for="{{infoDetailComment}}" wx:key="user_name">
+            <view class="detail">
+            <view class="user_img"></view>
+                <view class="origin">
+                    <view class="user_name">{{item.user_name}}</view>
+                    <view class="date">{{item.date}}</view>
+                </view>
+                <view class="star_count">{{item.star_count}}赞</view>
+            </view>
+            <view class="content">{{item.content}}</view>
+        </view>
+    </view>
+    <view class="send_comment">
+        <view class="tip">评论</view>
+        <view class="input_wrap">
+            <input placeholder="发表评论"></input>
+            <view class="iconfont icon-xiaolian"></view>
+        </view>
+        <view class="share">
+            <view class="iconfont icon-zhuanfa"></view>
+            分享
+        </view>
+    </view>
+</view>

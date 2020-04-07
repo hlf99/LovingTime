@@ -22,6 +22,7 @@
   }
 }
 
+// 热门部分 开始
 .news_content_wrap {
   .news_item {
     width: 100%;
@@ -181,3 +182,68 @@
     box-shadow: 0 10rpx 10rpx rgba(0, 0, 0, 0.5);
   }
 }
+// 热门部分 结束
+
+// 资讯部分 开始
+.info_search_wrap {
+  display:flex;
+  justify-content: center;
+  padding: 30rpx 20rpx;
+  position: relative;
+  input {
+    flex: 4;
+    border: 1rpx solid #ccc;
+    height: 60rpx;
+    padding-left: 20rpx;
+  }
+  .iconfont {
+    width: 39rpx;
+    height: 39rpx;
+    position: absolute;
+    top: 44rpx;
+    right: 168rpx; 
+    color: #1890ff;
+  }
+  .search_btn {
+    flex: 1;
+    height: 61rpx;
+    line-height: 61rpx;
+    text-align: center;
+    background-color: #ff00e6;
+    border-radius: 0 30rpx 30rpx 0;
+    font-size: 27rpx;
+    color: #fff;
+  }
+}
+
+.info_list_wrap {
+  .info_item {
+    display: flex;
+    padding: 15rpx 30rpx 30rpx;
+    border-top: 1rpx solid #ccc; 
+    .info_img {
+      width: 226rpx;
+      height: 181rpx;
+      margin-right: 25rpx;
+      image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .info_content {
+      width: 380rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .info_title {
+        font-size: 27rpx;
+        color: #505050;
+      }
+      .info_count {
+        font-size: 23rpx;
+        color: #b0b0b0;
+      }
+    }
+  }
+}
+// 资讯部分 结束

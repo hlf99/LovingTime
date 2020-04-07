@@ -4,7 +4,8 @@
     "pages/anniversary/anniversary",
     "pages/tree/tree",
     "pages/ours/ours",
-    "pages/publish_msg/publish_msg"
+    "pages/publish_msg/publish_msg",
+    "pages/info_detail/info_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

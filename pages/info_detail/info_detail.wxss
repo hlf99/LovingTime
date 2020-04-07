@@ -1,0 +1,134 @@
+page {
+  padding-bottom: 90rpx;
+}
+.info_detail_wrap {
+  padding: 30rpx 20rpx;
+}
+.info_detail_wrap .info_title {
+  color: #505050;
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.info_detail_wrap .info_origin {
+  color: #999999;
+  font-size: 23rpx;
+  padding-top: 25rpx;
+}
+.info_detail_wrap .info_content {
+  padding-bottom: 30rpx;
+}
+.info_detail_wrap .info_content text {
+  font-size: 29rpx;
+  color: #505050;
+}
+.info_detail_wrap .info_content image {
+  width: 100%;
+  margin-top: 20rpx;
+}
+.info_detail_wrap .info_comments {
+  position: relative;
+}
+.info_detail_wrap .info_comments .comment_title {
+  color: #999999;
+  font-size: 23rpx;
+}
+.info_detail_wrap .info_comments .comment_title::after {
+  content: '';
+  width: 600rpx;
+  height: 2rpx;
+  background-color: #ccc;
+  position: absolute;
+  top: 16rpx;
+  right: 0;
+}
+.info_detail_wrap .info_comments .comment_item {
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+.info_detail_wrap .info_comments .comment_item .detail {
+  display: flex;
+}
+.info_detail_wrap .info_comments .comment_item .detail .user_img {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 50%;
+  background-color: #a72594;
+}
+.info_detail_wrap .info_comments .comment_item .detail .origin {
+  width: 495rpx;
+  margin: 0 40rpx 0 20rpx;
+}
+.info_detail_wrap .info_comments .comment_item .detail .origin .user_name {
+  font-size: 27rpx;
+  color: #505050;
+}
+.info_detail_wrap .info_comments .comment_item .detail .origin .date {
+  font-size: 18rpx;
+  color: #999;
+  padding: 15rpx 0;
+}
+.info_detail_wrap .info_comments .comment_item .detail .star_count {
+  font-size: 18rpx;
+  color: #808080;
+  width: 68rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 18rpx;
+  text-align: center;
+}
+.info_detail_wrap .info_comments .comment_item .content {
+  font-size: 29rpx;
+  color: #505050;
+  padding-left: 90rpx;
+}
+.info_detail_wrap .send_comment {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: 1rpx solid #ccc;
+  background-color: #fff;
+  padding: 10rpx;
+}
+.info_detail_wrap .send_comment .tip {
+  flex: 1;
+  font-size: 28rpx;
+  color: #505050;
+  font-weight: 600;
+  text-align: center;
+}
+.info_detail_wrap .send_comment .input_wrap {
+  flex: 5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 62rpx;
+  border: 1rpx solid #ccc;
+}
+.info_detail_wrap .send_comment .input_wrap input {
+  background-color: #dadada;
+  color: #302f2f;
+  font-size: 17rpx;
+  width: 373rpx;
+  height: 42rpx;
+  padding-left: 10rpx;
+}
+.info_detail_wrap .send_comment .input_wrap .iconfont {
+  color: #999999;
+}
+.info_detail_wrap .send_comment .share {
+  flex: 2;
+  color: #302f2f;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_detail_wrap .send_comment .share .iconfont {
+  color: #302f2f;
+  font-size: 46rpx;
+}
