@@ -52,3 +52,119 @@
 .dateRemind_wrap .date_content .date_content_item .iconfont {
   margin-right: 30rpx;
 }
+.msg_wrap {
+  padding: 25rpx 20rpx;
+}
+.msg_wrap .msg_item {
+  padding-bottom: 60rpx;
+}
+.msg_wrap .msg_item .msg_title {
+  display: flex;
+}
+.msg_wrap .msg_item .msg_title .user_img {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.msg_wrap .msg_item .msg_title .user_img image {
+  width: 100%;
+}
+.msg_wrap .msg_item .msg_title .user_info {
+  flex-grow: 1;
+}
+.msg_wrap .msg_item .msg_title .user_info .user_name {
+  display: flex;
+  justify-content: space-between;
+  color: #333333;
+  font-size: 34rpx;
+}
+.msg_wrap .msg_item .msg_title .user_info .user_name .iconfont {
+  color: #999;
+  font-size: 50rpx;
+}
+.msg_wrap .msg_item .msg_title .user_info .date {
+  color: #999999;
+  font-size: 26rpx;
+  padding: 5rpx 0;
+}
+.msg_wrap .msg_item .msg_title .user_info .address {
+  display: flex;
+  font-size: 24rpx;
+  color: #505050;
+}
+.msg_wrap .msg_item .msg_title .user_info .address .iconfont {
+  color: #999;
+  margin-right: 5rpx;
+}
+.msg_wrap .msg_item .msg_content .msg_text {
+  padding: 5rpx 0 20rpx;
+}
+.msg_wrap .msg_item .msg_content .msg_img {
+  width: 100%;
+  height: 400rpx;
+}
+.msg_wrap .msg_item .msg_content .msg_img image {
+  width: 100%;
+  height: 100%;
+}
+.msg_wrap .msg_item .msg_tools {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #e2e2e2;
+}
+.msg_wrap .msg_item .msg_tools .view_count {
+  color: #808080;
+  font-size: 28rpx;
+}
+.msg_wrap .msg_item .msg_tools .msg_handleIcon {
+  color: #999;
+}
+.msg_wrap .msg_item .msg_tools .msg_handleIcon .iconfont {
+  font-size: 40rpx;
+  margin-left: 40rpx;
+}
+.msg_wrap .msg_item .msg_tools .msg_handleIcon .active {
+  color: #3335c1;
+}
+.msg_wrap .msg_item .msg_comments {
+  font-size: 28rpx;
+  padding-top: 40rpx;
+}
+.msg_wrap .msg_item .msg_comments .comment_count {
+  color: #257bb6;
+  padding-bottom: 20rpx;
+}
+.msg_wrap .msg_item .msg_comments .comment_content view {
+  padding-bottom: 20rpx;
+}
+.msg_wrap .msg_item .msg_comments .comment_content .users_name {
+  color: #257bb6;
+}
+.msg_wrap .msg_item .msg_comments .comment_input input {
+  border: 1rpx solid #e2e2e2;
+  padding: 15rpx 20rpx;
+  color: #bababa;
+  border-radius: 6rpx;
+}
+.msg_wrap .view_more {
+  color: #707070;
+  font-size: 30rpx;
+  text-align: center;
+}
+.msg_wrap .send_msg_btn {
+  width: 112rpx;
+  height: 112rpx;
+  background-color: #f953f6;
+  font-size: 60rpx;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  box-shadow: 0 10rpx 10rpx rgba(0, 0, 0, 0.5);
+}

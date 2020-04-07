@@ -34,37 +34,56 @@
       </view>
     </view>
     <!-- 消息浏览部分 -->
-    <view class="message_wrap">
-      <view class="message_item">
+    <view class="msg_wrap">
+      <view class="msg_item" wx:for="{{msgItemList}}" wx:key="user_name">
         <view class="msg_title">
           <view class="user_img">
-            <image></image>
+            <image mode="widthFix" src="{{item.user_img}}"></image>
           </view>
-          <view class="user-info">
-            <view class="user_name"></view>
-            <view class="date"></view>
-            <view class="address"></view>
+          <view class="user_info">
+            <view class="user_name">
+              <view class="content">{{item.user_name}}</view>
+              <view class="iconfont icon-jiantou"></view>
+            </view>
+            <view class="date">{{item.date}}</view>
+            <view class="address">
+              <view class="iconfont icon-dizhi"></view>
+              <view class="content">{{item.address}}</view>
+            </view>
           </view>
-          <view class="iconfont"></view>
         </view>
         <view class="msg_content">
-          <view class="msg_text"></view>
-          <view class="msg_img"></view>
-        </view>
-        <view class="msg_tools">
-          <view class="view_count"></view>
-          <view class="msg_handleIcon">
-            <text class="iconfont"></text>
-            <text class="iconfont"></text>
-            <text class="iconfont"></text>
+          <view class="msg_text">{{item.msg_text}}</view>
+          <view class="msg_img">
+            <image src="{{item.msg_img}}"></image>
           </view>
         </view>
-        <view class="msg_commemts">
-          <view class="comment_count"></view>
-          <view class="comment_content"></view>
-          <view class="comment_input"></view>
+        <view class="msg_tools">
+          <view class="view_count">浏览{{item.viewCount}}次</view>
+          <view class="msg_handleIcon">
+            <text class="iconfont icon-dianzan active"></text>
+            <text class="iconfont icon-xiaoxi"></text>
+            <text class="iconfont icon-zhuanfa"></text>
+          </view>
+        </view>
+        <view class="msg_comments">
+          <view class="comment_count">
+            <text class="iconfont icon-dianzan"></text>
+            红茶君、牛姨、Cinder_等18人觉得很赞
+          </view>
+          <view class="comment_content">
+            <view><text class="users_name">红茶君</text>：哪个学校呢？</view>
+            <view><text class="users_name">Miracle</text> 回复 <text class="users_name">红茶君</text> ：在南华大学撒</view>
+            <view><text class="users_name">牛姨</text>：超可爱的！</view>
+          </view>
+          <view class="comment_input">
+            <input placeholder="评论"></input>
+          </view>
         </view>
       </view>
+      <button class="view_more" plain>查看更多 ></button>
+      <!-- 消息发布按钮 点击可打开消息发布页面 -->
+      <view class="send_msg_btn" bindtap="handleOpenPulish">+</view>
     </view>
   </view>
   <!-- 资讯部分 -->

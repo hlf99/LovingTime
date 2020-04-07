@@ -1,0 +1,13 @@
+<!-- 取消和发布按钮 -->
+<view class="operation_wrap">
+    <button class="cancel" bindtap="handleCancelPublish">取消</button>
+    <button class="publish">发布</button>
+</view>
+
+<!-- 消息发布主区域 -->
+<view class="text_wrap">
+    <!-- 文字输入区域 -->
+    <textarea placeholder="请输入文本"></textarea>
+    <!-- 添加图片按钮 -->
+    <view class="add_imgs">+</view>
+</view>

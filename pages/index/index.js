@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 标题栏数据
     navItem: [
       {
         name: "热门",
@@ -26,6 +27,7 @@ Page({
         isActive: false
       }
     ],
+    // 轮播图数据
     swiperItemList: [
       {
         src: 'https://ae01.alicdn.com/kf/H82f112b92b19451db8f72c680c3c7e8cx.jpg',
@@ -47,6 +49,27 @@ Page({
         src: 'https://ae01.alicdn.com/kf/H8c0fc55a321f45ca85fec7a434162ba8Y.jpg',
         id: 4
       }
+    ],
+    // 消息区数据
+    msgItemList: [
+      {
+        user_img: 'https://ae01.alicdn.com/kf/Hebfb918e9aed4f17a4c27afbb7b96c36i.png',
+        user_name: 'Miracle',
+        date: '2020年2月2日 20:20',
+        address: '湖南省衡阳市蒸湘区',
+        msg_text: '毕业了！',
+        msg_img: 'https://ae01.alicdn.com/kf/Hf87aadb3d9e94a0fa23574d9ef646338j.png',
+        viewCount: 234
+      },
+      {
+        user_img: 'https://ae01.alicdn.com/kf/H82356a4cffe64aea96fd03acd359b1d0w.png',
+        user_name: 'Rachel',
+        date: '2020年2月20日 08:23',
+        address: '无',
+        msg_text: '^_^',
+        msg_img: 'https://ae01.alicdn.com/kf/H74898f1ca5a24d568957c5fa1f479c03S.jpg',
+        viewCount: 23
+      }
     ]
   },
 
@@ -59,6 +82,13 @@ Page({
     navItem.forEach((v,i)=>i===index?v.isActive=true:v.isActive=false);
     // 3 将修改后的tabs数组重新放回data中
     this.setData({navItem});
+  },
+
+  // 点击‘+’号， 跳转到消息发布界面
+  handleOpenPulish() {
+    wx.navigateTo({
+      url: '/pages/publish_msg/publish_msg'
+    })
   },
 
   /**

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/anniversary/anniversary",
     "pages/tree/tree",
-    "pages/ours/ours"
+    "pages/ours/ours",
+    "pages/publish_msg/publish_msg"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -41,6 +42,5 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
