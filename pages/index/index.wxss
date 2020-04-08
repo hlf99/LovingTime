@@ -226,3 +226,106 @@
   font-size: 23rpx;
   color: #b0b0b0;
 }
+.lastest_music {
+  width: 100%;
+  height: 375rpx;
+  margin: 20rpx 0;
+}
+.lastest_music image {
+  width: 100%;
+  height: 100%;
+}
+.music_list_wrap .play_all {
+  display: flex;
+}
+.music_list_wrap .play_all .iconfont {
+  flex: 1;
+  color: #999999;
+  font-size: 40rpx;
+  padding: 20rpx;
+  text-align: center;
+}
+.music_list_wrap .play_all .play_text {
+  flex: 10;
+  color: #505050;
+  font-size: 29rpx;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 0;
+}
+.music_list_wrap .music_content {
+  padding: 0 23rpx;
+}
+.music_list_wrap .music_content .music_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.music_list_wrap .music_content .music_item .music_info .music_name {
+  font-size: 29rpx;
+  color: #505050;
+  padding-bottom: 10rpx;
+}
+.music_list_wrap .music_content .music_item .music_info .music_singer {
+  font-size: 23rpx;
+  color: #999;
+}
+.music_list_wrap .music_content .music_item .music_more {
+  color: #999;
+}
+.rank_wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding-top: 10rpx;
+}
+.rank_wrap .rank_title {
+  color: #fff;
+  font-size: 26rpx;
+  font-weight: 700;
+  background-color: #5258ba;
+  width: 361rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  text-align: center;
+  margin: 0 auto 10rpx;
+}
+.rank_wrap .rank_list .rank_item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.rank_wrap .rank_list .rank_item .rank_num {
+  flex: 1;
+  text-align: center;
+  font-size: 32rpx;
+}
+.rank_wrap .rank_list .rank_item .rank_img {
+  width: 89rpx;
+  height: 89rpx;
+}
+.rank_wrap .rank_list .rank_item .rank_img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.rank_wrap .rank_list .rank_item .rank_data {
+  flex: 6;
+  padding-left: 20rpx;
+}
+.rank_wrap .rank_list .rank_item .rank_data .content {
+  display: flex;
+  justify-content: space-between;
+  color: #505050;
+  font-size: 27rpx;
+  margin-bottom: 15rpx;
+}
+.rank_wrap .rank_list .rank_item .rank_data .content .lovers_num {
+  padding-right: 30rpx;
+}
+.rank_wrap .rank_list .rank_item .rank_data progress {
+  width: 473rpx;
+  height: 18rpx;
+}

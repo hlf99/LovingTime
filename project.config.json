@@ -61,6 +61,13 @@
 					"pathName": "pages/info_detail/info_detail",
 					"query": "info_id=10",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "音乐播放界面",
+					"pathName": "pages/music_play/music_play",
+					"query": "song_id=1001",
+					"scene": null
 				}
 			]
 		}

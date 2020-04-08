@@ -1,8 +1,8 @@
+<!-- 头部导航栏 -->
 <view class="nav_wrap">
-  <!-- 头部导航栏 -->
   <view class="head">
-    <view wx:for="{{navItem}}" wx:key="id" class="nav_item {{item.isActive ? 'active' : ''}}" bindtap="handleItemNavChange"
-      data-index="{{index}}">
+    <view wx:for="{{navItem}}" wx:key="id" class="nav_item {{item.isActive ? 'active' : ''}}"
+      bindtap="handleItemNavChange" data-index="{{index}}">
       {{item.name}}</view>
   </view>
 </view>
@@ -108,7 +108,50 @@
     </view>
   </view>
   <!-- 音乐部分 -->
-  <view wx:elif="{{navItem[2].isActive}}" class="news_item">3</view>
+  <view wx:elif="{{navItem[2].isActive}}" class="news_item">
+    <!-- 最新音乐海报图 -->
+    <view class="lastest_music">
+      <image src="https://ae01.alicdn.com/kf/H90382976acc5438da560fadab27f14079.jpg"></image>
+    </view>
+    <!-- 音乐播放列表 -->
+    <view class="music_list_wrap">
+      <view class="play_all">
+        <view class="iconfont icon-fenzu"></view>
+        <view class="play_text">播放全部</view>
+      </view>
+      <view class="music_content">
+        <view class="music_item" wx:for="{{musicInfoList}}" wx:key="song_id" bindtap="handleToPlayMusic">
+          <view class="music_info">
+            <view class="music_name">{{item.name}}</view>
+            <view class="music_singer">{{item.singer}}</view>
+          </view>
+          <view class="music_more">
+            <view class="iconfont icon-iconfontgengduo"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
   <!-- 排行榜部分 -->
-  <view wx:else class="news_item">4</view>
+  <view wx:else class="news_item">
+    <view class="rank_wrap">
+      <view class="rank_title">高校情侣数前五名</view>
+      <view class="rank_list">
+        <view class="rank_item" wx:for="{{loversRankList}}" wx:key="shcool">
+          <view class="rank_num">{{index+1}}</view>
+          <view class="rank_img">
+            <image src="{{item.school_img}}"></image>
+          </view>
+          <view class="rank_data">
+            <view class="content">
+              <view class="school_name">{{item.school}}</view>
+              <view class="lovers_num">{{item.num}} 对</view>
+            </view>
+            <!-- 假设总对数为10000 -->
+            <progress percent="{{item.num/100}}" border-radius= "9rpx" activeColor="#5258ba" backgroundColor="#9feaff"></progress>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

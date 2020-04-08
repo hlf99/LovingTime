@@ -97,6 +97,77 @@ Page({
         info_img: 'https://ae01.alicdn.com/kf/Hb820d02712dd444dad69dc47f203d7ccM.png',
         read_count: 13000
       }
+    ],
+    // 音乐列表数据
+    musicInfoList: [
+      {
+        name: '晴天',
+        singer: '周杰伦',
+        song_id: 1001
+      },
+      {
+        name: '焚梦',
+        singer: '十指流玉-焚梦',
+        song_id: 1002
+      },
+      {
+        name: 'Apologize',
+        singer: 'OneRepublic - Dreaming Out Loud（Tour Edition）',
+        song_id: 1003
+      },
+      {
+        name: 'Me and My Broken Heart',
+        singer: 'Rixton - Me and My Broken Heart',
+        song_id: 1004
+      },
+      {
+        name: 'Flower Dance',
+        singer: 'DJ OKAWARI - A Cup Of Coffee',
+        song_id: 1005
+      },
+      {
+        name: '我很快乐',
+        singer: '刘惜君 - 爱情花园',
+        song_id: 1006
+      },
+      {
+        name: 'Letter',
+        singer: 'Iris-Your Friendship Means So Much to Me',
+        song_id: 1007
+      },
+      {
+        name: '生命树',
+        singer: '吴雨霏 - My January（2nd Edition）',
+        song_id: 1008
+      }
+    ],
+    // 情侣数排行榜数据
+    loversRankList: [
+      {
+        school: '南华大学',
+        num: 9000,
+        school_img: 'https://ae01.alicdn.com/kf/H8bad52de43da40ac9ea51f6d91c87a509.jpg' 
+      },
+      {
+        school: '东华大学',
+        num: 8000,
+        school_img: 'https://ae01.alicdn.com/kf/H57ec62a778724dcb9692270285059200V.jpg' 
+      },
+      {
+        school: '西华大学',
+        num: 7500,
+        school_img: 'https://ae01.alicdn.com/kf/H05f3024fbde444cb965adbd69b746910g.jpg' 
+      },
+      {
+        school: '北华大学',
+        num: 6320,
+        school_img: 'https://ae01.alicdn.com/kf/Ha69767f37fce4daa8e430b2a9ccdb886K.jpg' 
+      },
+      {
+        school: '清华大学',
+        num: 1060,
+        school_img: 'https://ae01.alicdn.com/kf/Hb850b7bcf23f42bcb6f70560ac3fa8e3d.jpg' 
+      }
     ]
   },
 
@@ -123,6 +194,13 @@ Page({
     wx.navigateTo({
       url: '/pages/info_detail/info_detail'
     });
+  },
+
+  // 点击音乐列表中的音乐 跳转到音乐播放界面
+  handleToPlayMusic() {
+    wx.navigateTo({
+      url: '/pages/music_play/music_play'
+    })
   },
 
   /**
