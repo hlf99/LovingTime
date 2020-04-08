@@ -68,6 +68,26 @@
 					"pathName": "pages/music_play/music_play",
 					"query": "song_id=1001",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "纪念日页面",
+					"pathName": "pages/anniversary/anniversary",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加纪念日页面",
+					"pathName": "pages/add_anniversary/add_anniversary",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "爱情树页面",
+					"pathName": "pages/tree/tree",
+					"scene": null
 				}
 			]
 		}

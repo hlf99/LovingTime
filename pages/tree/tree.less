@@ -1,0 +1,61 @@
+.loveTree_wrap {
+    .tips_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36rpx;
+        color: #ff6288;
+        margin: 90rpx 0 30rpx;
+        .love_days {
+            padding-left: 20rpx;
+        }
+    }
+    .tree_content {
+        position: relative;
+        .tree_img {
+            width: 100%;
+            height: 674rpx;
+            image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .tools {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20rpx;
+            width: 280rpx;
+            height: 64rpx;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .icon-fenzu1 {
+                color: #2a82e4;
+                font-size: 60rpx;
+            }
+            .icon-taiyang1 {
+                color: #ffeb3b;
+                font-size: 60rpx;
+            }
+        }
+    }
+    .tree_progress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        progress {
+            width: 450rpx;
+            height: 20rpx;
+            padding: 30rpx 0 15rpx;
+        }
+        .tree_info {
+            display: flex;
+            color: #999;
+            font-size: 23rpx;
+            .intro {
+                padding-right: 280rpx;
+            }
+        }
+    }
+}

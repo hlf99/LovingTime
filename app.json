@@ -6,7 +6,8 @@
     "pages/ours/ours",
     "pages/publish_msg/publish_msg",
     "pages/info_detail/info_detail",
-    "pages/music_play/music_play"
+    "pages/music_play/music_play",
+    "pages/add_anniversary/add_anniversary"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,2 +1,16 @@
-<!--pages/anniversary/anniversary.wxml-->
-<text>pages/anniversary/anniversary.wxml</text>
+<view class="anniversary_wrap">
+    <view class="anni_item" wx:for="{{anniversaryList}}" wx:key="date">
+        <view class="anni_title">{{item.title}}</view>
+        <view class="anni_content">
+            <view class="date_wrap">
+                <view class="iconfont icon-shizhong"></view>
+                <view class="date">{{item.date}}</view>
+            </view>
+            <view class="days_wrap">
+                <view class="iconfont icon-lingdang"></view>
+                <view class="days">距离你们最近的纪念日还有{{item.days}}天</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="add_anniversary_bnt" bindtap="handleToAddAnniversary">+</view>

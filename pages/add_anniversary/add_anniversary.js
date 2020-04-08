@@ -1,32 +1,28 @@
-// pages/anniversary/anniversary.js
+// pages/add_anniversary/add_anniversary.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // 纪念日数据
-    anniversaryList: [
-      {
-        title: '在一起99天',
-        date: '20/03/03 周二 00:00',
-        days: 22
-      },
-      {
-        title: '认识第250天',
-        date: '20/03/08 周日 00:00',
-        days: 27
-      }
-    ]
+    date: '纪念日时间'
   },
 
-  // 跳转到添加纪念日的页面
-  handleToAddAnniversary() {
-    wx.navigateTo({
-      url: '/pages/add_anniversary/add_anniversary'
+  // 点击取消回退到上一个页面
+  handleCancel() {
+    wx.navigateBack({
+      delta: 1   // 回退前 delta(默认为1) 页面
     })
   },
 
+  // 选择纪念日日期
+  bindDateChange(e) {
+    this.setData({
+      date: e.detail.value
+    });
+  },
+
+  
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,2 +1,22 @@
-<!--pages/tree/tree.wxml-->
-<text>pages/tree/tree.wxml</text>
+<view class="loveTree_wrap">
+    <view class="tips_title">
+        <view class="iconfont icon-nolove"></view>
+        <view class="love_days">你们已经相爱72天啦</view>
+    </view>
+    <view class="tree_content">
+        <view class="tree_img">
+            <image src="https://ae01.alicdn.com/kf/Hd4fe5b0578c14b6290dab3c57bab5040C.jpg"></image>
+        </view>
+        <view class="tools">
+            <view class="iconfont icon-fenzu1"></view>
+            <view class="iconfont icon-taiyang1"></view>
+        </view>
+    </view>
+    <view class="tree_progress">
+        <progress percent="80" activeColor="#1fc19e" backgroundColor="#e9e9e9" border-radius="5rpx"></progress>
+        <view class="tree_info">
+            <view class="intro">成长值</view>
+            <view class="grade">等级：20</view>
+        </view>
+    </view>
+</view>
