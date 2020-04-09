@@ -1,4 +1,4 @@
-// pages/ours/ours.js
+// pages/ours_intro/ours_intro.js
 Page({
 
   /**
@@ -6,13 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  // 点击关于我们 跳转到关于我们页面
-  handleToOursIntro() {
-    wx.navigateTo({
-      url: '/pages/ours_intro/ours_intro'
-    })
   },
 
   /**

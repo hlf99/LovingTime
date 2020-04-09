@@ -1,2 +1,56 @@
-<!--pages/ours/ours.wxml-->
-<text>pages/ours/ours.wxml</text>
+<view class="ours_info_wrap">
+    <view class="lovers_info_wrap">
+        <view class="me">
+            <view class="name">我</view>
+            <view class="intro">暂无个人简介</view>
+        </view>
+        <view class="love_days">
+            <view class="user_me_img">
+               <image src=""></image>
+            </view>
+            <view class="days">
+                <view class="iconfont icon-fenzu2"></view>
+                <view class="text_info">你们已恋爱99天</view>
+            </view>
+            <view class="user_lover_img">
+                <image src=""></image>
+            </view>
+        </view>
+        <view class="lover">
+            <view class="name">另一半</view>
+            <view class="intro">暂无个人简介</view>
+        </view>
+    </view>
+    <view class="ours_tools_wrap">
+        <view class="secret">
+            <view class="iconfont icon-nolove"></view>
+            <view class="text">悄悄话</view>
+        </view>
+        <view class="photos">
+            <view class="iconfont icon-zhaopian"></view>
+            <view class="text">照片库</view>
+        </view>
+        <view class="wish">
+            <view class="iconfont icon-xingxing"></view>
+            <view class="text">愿望单</view>
+        </view>
+    </view>
+    <view class="ours_list_wrap">
+        <view class="active_center">
+            <view class="text">活动中心</view>
+            <view class="iconfont icon-jiantou-copy"></view>
+        </view>
+        <view class="clean_storage">
+            <view class="text">清理缓存</view>
+            <view class="iconfont icon-jiantou-copy"></view>
+        </view>
+        <view class="login_out">
+            <view class="text">注销账号</view>
+            <view class="iconfont icon-jiantou-copy"></view>
+        </view>
+        <view class="ours_intro" bindtap="handleToOursIntro">
+            <view class="text">关于我们</view>
+            <view class="iconfont icon-jiantou-copy"></view>
+        </view>
+    </view>
+</view>

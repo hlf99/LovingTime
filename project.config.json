@@ -87,6 +87,20 @@
 					"id": -1,
 					"name": "爱情树页面",
 					"pathName": "pages/tree/tree",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我们的页面",
+					"pathName": "pages/ours/ours",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/ours_intro/ours_intro",
 					"scene": null
 				}
 			]

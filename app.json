@@ -7,7 +7,8 @@
     "pages/publish_msg/publish_msg",
     "pages/info_detail/info_detail",
     "pages/music_play/music_play",
-    "pages/add_anniversary/add_anniversary"
+    "pages/add_anniversary/add_anniversary",
+    "pages/ours_intro/ours_intro"
   ],
   "window": {
     "backgroundTextStyle": "light",

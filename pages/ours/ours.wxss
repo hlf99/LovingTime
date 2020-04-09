@@ -1,1 +1,96 @@
-/* pages/ours/ours.wxss */
+.ours_info_wrap {
+  padding: 0 23rpx;
+}
+.ours_info_wrap .lovers_info_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 0 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.ours_info_wrap .lovers_info_wrap .me,
+.ours_info_wrap .lovers_info_wrap .lover {
+  text-align: center;
+}
+.ours_info_wrap .lovers_info_wrap .me .name,
+.ours_info_wrap .lovers_info_wrap .lover .name {
+  color: #505050;
+  font-size: 27rpx;
+  padding: 15rpx;
+}
+.ours_info_wrap .lovers_info_wrap .me .intro,
+.ours_info_wrap .lovers_info_wrap .lover .intro {
+  color: #999;
+  font-size: 23rpx;
+}
+.ours_info_wrap .lovers_info_wrap .love_days {
+  display: flex;
+}
+.ours_info_wrap .lovers_info_wrap .love_days .user_me_img,
+.ours_info_wrap .lovers_info_wrap .love_days .user_lover_img {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #0abdee;
+  border-radius: 50%;
+}
+.ours_info_wrap .lovers_info_wrap .love_days .user_me_img image,
+.ours_info_wrap .lovers_info_wrap .love_days .user_lover_img image {
+  width: 100%;
+  height: 100%;
+}
+.ours_info_wrap .lovers_info_wrap .love_days .user_lover_img {
+  background-color: #ff45cd;
+}
+.ours_info_wrap .lovers_info_wrap .love_days .days {
+  color: #f885a0;
+  position: relative;
+  top: -10rpx;
+  left: 0;
+}
+.ours_info_wrap .lovers_info_wrap .love_days .days .iconfont {
+  font-size: 62rpx;
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+.ours_info_wrap .lovers_info_wrap .love_days .days .text_info {
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.ours_info_wrap .ours_tools_wrap {
+  padding: 30rpx 60rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.ours_info_wrap .ours_tools_wrap .secret,
+.ours_info_wrap .ours_tools_wrap .photos,
+.ours_info_wrap .ours_tools_wrap .wish {
+  color: #ff6288;
+  text-align: center;
+}
+.ours_info_wrap .ours_tools_wrap .secret .iconfont,
+.ours_info_wrap .ours_tools_wrap .photos .iconfont,
+.ours_info_wrap .ours_tools_wrap .wish .iconfont {
+  font-size: 40rpx;
+}
+.ours_info_wrap .ours_tools_wrap .secret .text,
+.ours_info_wrap .ours_tools_wrap .photos .text,
+.ours_info_wrap .ours_tools_wrap .wish .text {
+  font-size: 26rpx;
+}
+.ours_info_wrap .ours_list_wrap .active_center,
+.ours_info_wrap .ours_list_wrap .clean_storage,
+.ours_info_wrap .ours_list_wrap .login_out,
+.ours_info_wrap .ours_list_wrap .ours_intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #505050;
+  font-size: 27rpx;
+}
+.ours_info_wrap .ours_list_wrap .active_center .iconfont,
+.ours_info_wrap .ours_list_wrap .clean_storage .iconfont,
+.ours_info_wrap .ours_list_wrap .login_out .iconfont,
+.ours_info_wrap .ours_list_wrap .ours_intro .iconfont {
+  font-size: 40rpx;
+}
