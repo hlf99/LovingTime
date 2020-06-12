@@ -20,7 +20,7 @@
       </swiper-item>
     </swiper>
     <!-- 纪念日提醒 -->
-    <view class="dateRemind_wrap">
+    <view class="dateRemind_wrap" bindtap="handleToAnniversary">
       <view class="date_title">纪念日（在一起99天）</view>
       <view class="date_content">
         <view class="date_content_item">
@@ -35,7 +35,7 @@
     </view>
     <!-- 消息浏览部分 -->
     <view class="msg_wrap">
-      <view class="msg_item" wx:for="{{msgItemList}}" wx:key="user_name">
+      <view class="msg_item" wx:for="{{msgItemList}}" wx:key="msg_id">
         <view class="msg_title">
           <view class="user_img">
             <image mode="widthFix" src="{{item.user_img}}"></image>
@@ -54,14 +54,14 @@
         </view>
         <view class="msg_content">
           <view class="msg_text">{{item.msg_text}}</view>
-          <view class="msg_img">
+          <view class="msg_img" bindtap="handlePreviewImg" data-url="{{item.msg_img}}">
             <image src="{{item.msg_img}}"></image>
           </view>
         </view>
         <view class="msg_tools">
           <view class="view_count">浏览{{item.viewCount}}次</view>
           <view class="msg_handleIcon">
-            <text class="iconfont icon-dianzan active"></text>
+            <text class="iconfont icon-dianzan {{isStar?'active':''}}" bindtap="handleStar"></text>
             <text class="iconfont icon-xiaoxi"></text>
             <text class="iconfont icon-zhuanfa"></text>
           </view>

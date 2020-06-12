@@ -8,7 +8,9 @@
     "pages/info_detail/info_detail",
     "pages/music_play/music_play",
     "pages/add_anniversary/add_anniversary",
-    "pages/ours_intro/ours_intro"
+    "pages/ours_intro/ours_intro",
+    "pages/secrets/secrets",
+    "pages/wishes/wishes"
   ],
   "window": {
     "backgroundTextStyle": "light",

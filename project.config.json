@@ -16,7 +16,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.3",
-	"appid": "wxb3db5b0460d76a0c",
+	"appid": "wx023a406cabf69b68",
 	"projectname": "LovingTime",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -101,6 +101,21 @@
 					"id": -1,
 					"name": "关于我们",
 					"pathName": "pages/ours_intro/ours_intro",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "悄悄话页面",
+					"pathName": "pages/secrets/secrets",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "愿望单页面",
+					"pathName": "pages/wishes/wishes",
+					"query": "",
 					"scene": null
 				}
 			]

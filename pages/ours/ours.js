@@ -15,6 +15,20 @@ Page({
     })
   },
 
+  // 点击悄悄话，跳转到悄悄话页面
+  handleToSecrets() {
+    wx.navigateTo({
+      url: '/pages/secrets/secrets'
+    })
+  },
+
+  // 点击愿望单 跳转到愿望单页面
+  handleToWishes() {
+    wx.navigateTo({
+      url: '/pages/wishes/wishes'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

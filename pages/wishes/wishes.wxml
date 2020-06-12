@@ -1,0 +1,12 @@
+<view class="wrap">
+  <view class="tip">让我们来一起实现愿望吧</view>
+  <view class="addArea">
+    <button bindtap="addWish">保存</button>
+    <textarea bindinput="getWish" value="{{wish}}"></textarea>
+  </view>
+  <view class="showArea">
+    <scroll-view scroll-y="true" class="wish-wrap">
+      <view class="wish-item" wx:for="{{wishesList}}" wx:key="*this" bindlongpress="removeItem" data-index="{{index}}">{{item}}</view>   
+    </scroll-view>
+  </view>
+</view>

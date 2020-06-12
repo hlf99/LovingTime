@@ -3,6 +3,7 @@
         <image src="https://ae01.alicdn.com/kf/Hd4fe5b0578c14b6290dab3c57bab5040C.jpg"></image>
     </view>
     <view class="intro_text">
+        <!-- 要想使用text-indent实现首行缩进，要用view替代text来包裹文本 -->
         <view class="text">
             壹校恋爱拾光是以校园恋爱.............................
             ......................................................................................

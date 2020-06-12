@@ -1,4 +1,19 @@
-// pages/index/index.js
+/**
+ * 1 点击图片 可以预览
+ *  1 获取到消息区所有的图片数组
+ *  2 接收到当前点击图片的url
+ * 2 点赞消息
+ *  1 页面onShow时 加载缓存中的消息点赞的数组
+ *  2 判断当前消息是否已点赞
+ *    1 是 点亮图标
+ *    2 否 取消点亮
+ *  3 点击点赞图标 
+ *    1 判断当前消息是否存在于缓存中
+ *    2 存在的话 把该消息的数据删除
+ *    3 不存在的话 把该消息添加到点赞数组中 存入缓存  
+ */
+
+
 Page({
 
   /**
@@ -59,7 +74,8 @@ Page({
         address: '湖南省衡阳市蒸湘区',
         msg_text: '毕业了！',
         msg_img: 'https://ae01.alicdn.com/kf/Hf87aadb3d9e94a0fa23574d9ef646338j.png',
-        viewCount: 234
+        viewCount: 234,
+        msg_id: 101
       },
       {
         user_img: 'https://ae01.alicdn.com/kf/H82356a4cffe64aea96fd03acd359b1d0w.png',
@@ -68,7 +84,8 @@ Page({
         address: '无',
         msg_text: '^_^',
         msg_img: 'https://ae01.alicdn.com/kf/H74898f1ca5a24d568957c5fa1f479c03S.jpg',
-        viewCount: 23
+        viewCount: 23,
+        msg_id: 101
       }
     ],
     // 资讯列表数据
@@ -146,29 +163,31 @@ Page({
       {
         school: '南华大学',
         num: 9000,
-        school_img: 'https://ae01.alicdn.com/kf/H8bad52de43da40ac9ea51f6d91c87a509.jpg' 
+        school_img: 'https://ae01.alicdn.com/kf/H8bad52de43da40ac9ea51f6d91c87a509.jpg'
       },
       {
         school: '东华大学',
         num: 8000,
-        school_img: 'https://ae01.alicdn.com/kf/H57ec62a778724dcb9692270285059200V.jpg' 
+        school_img: 'https://ae01.alicdn.com/kf/H57ec62a778724dcb9692270285059200V.jpg'
       },
       {
         school: '西华大学',
         num: 7500,
-        school_img: 'https://ae01.alicdn.com/kf/H05f3024fbde444cb965adbd69b746910g.jpg' 
+        school_img: 'https://ae01.alicdn.com/kf/H05f3024fbde444cb965adbd69b746910g.jpg'
       },
       {
         school: '北华大学',
         num: 6320,
-        school_img: 'https://ae01.alicdn.com/kf/Ha69767f37fce4daa8e430b2a9ccdb886K.jpg' 
+        school_img: 'https://ae01.alicdn.com/kf/Ha69767f37fce4daa8e430b2a9ccdb886K.jpg'
       },
       {
         school: '清华大学',
         num: 1060,
-        school_img: 'https://ae01.alicdn.com/kf/Hb850b7bcf23f42bcb6f70560ac3fa8e3d.jpg' 
+        school_img: 'https://ae01.alicdn.com/kf/Hb850b7bcf23f42bcb6f70560ac3fa8e3d.jpg'
       }
-    ]
+    ],
+    // 消息是否点赞
+    isStar: false
   },
 
   // 标题选中激活
@@ -177,9 +196,9 @@ Page({
     const index = e.currentTarget.dataset.index;
     // 2 修改源数组
     let navItem = this.data.navItem;
-    navItem.forEach((v,i)=>i===index?v.isActive=true:v.isActive=false);
+    navItem.forEach((v, i) => i === index ? v.isActive = true : v.isActive = false);
     // 3 将修改后的tabs数组重新放回data中
-    this.setData({navItem});
+    this.setData({ navItem });
   },
 
   // 点击‘+’号， 跳转到消息发布界面
@@ -203,59 +222,22 @@ Page({
     })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  // 点击首页的纪念日，跳转到纪念日页面
+  handleToAnniversary() {
+    wx.switchTab({
+      url: '/pages/anniversary/anniversary'
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  // 点击图片 进行预览
+  handlePreviewImg(e) {
+    // 获取到消息区中的所有图片的数组
+    const msgImgs = this.data.msgItemList.map(v => v.msg_img);
+    // 接收传递过来的图片url
+    const current = e.currentTarget.dataset.url;
+    wx.previewImage({
+      current: current, // 当前显示图片的链接，不填则默认为 urls 的第一张
+      urls: msgImgs
+    })
   }
 })

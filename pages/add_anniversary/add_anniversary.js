@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date: '纪念日时间'
+    date: '纪念日时间',
+    anniversaryName: ''
   },
 
   // 点击取消回退到上一个页面
@@ -20,6 +21,18 @@ Page({
     this.setData({
       date: e.detail.value
     });
+  },
+
+  // 1. 获取到textarea中的文本并存入anniversaryName中
+  inputName(e) {
+    this.setData({
+      anniversaryName: e.detail.value
+    })
+  },
+
+  // 添加纪念日
+  addAnniversary() {
+    console.log(this.data.anniversaryName);
   },
 
   
@@ -76,6 +89,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    
   }
 })

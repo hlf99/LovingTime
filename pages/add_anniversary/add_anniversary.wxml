@@ -1,9 +1,9 @@
 <view class="add_wrap">
     <view class="cancel" bindtap="handleCancel">取消</view>
-    <textarea placeholder="请输入纪念日名称"></textarea>
+    <textarea placeholder="请输入纪念日名称" bindinput="inputName"></textarea>
     <picker class="choose_date" mode="date" value="{{date}}" start="1965-01-01" end="2020-12-31" bindchange="bindDateChange">
         <view class="picker">{{date}}</view>
         <view class="iconfont icon-rili"></view>
     </picker>
-    <button>添加</button>
+    <button bindtap="addAnniversary">添加</button>
 </view>

@@ -22,7 +22,7 @@
         </view>
     </view>
     <view class="ours_tools_wrap">
-        <view class="secret">
+        <view class="secret" bindtap="handleToSecrets">
             <view class="iconfont icon-nolove"></view>
             <view class="text">悄悄话</view>
         </view>
@@ -30,7 +30,7 @@
             <view class="iconfont icon-zhaopian"></view>
             <view class="text">照片库</view>
         </view>
-        <view class="wish">
+        <view class="wish" bindtap="handleToWishes">
             <view class="iconfont icon-xingxing"></view>
             <view class="text">愿望单</view>
         </view>
